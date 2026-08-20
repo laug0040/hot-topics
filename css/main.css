@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #205274;
+    --secondary-color: #18435c;
+    --tertiary-color: #a8d3ef;
+}
+
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Navigation Styling */
+nav {
+    background-color:var(--primary-color);
+    padding:1rem;
+}
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+a {
+    color:var(--tertiary-color);
+    text-decoration:none;
+    margin-right:6rem;
+}
+
+footer {
+    background-color:var(--primary-color);
+    padding:1rem;
+    color:white;
+}

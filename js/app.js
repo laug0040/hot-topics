@@ -10,13 +10,7 @@ document.addEventListener('DOMContentLoaded',()=>{
       if(!res.ok) throw new Error('Partial not found');
       const html = await res.text();
       main.innerHTML = html;
-      // if first article has an image, use it for masthead background
-      const firstImg = main.querySelector('img');
-      if(firstImg && firstImg.src){
-        masthead.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(${firstImg.getAttribute('src')})`;
-      } else {
-        masthead.style.backgroundImage = '';
-      }
+      masthead.style.backgroundImage = '';
     }catch(e){
       main.innerHTML = '<p>Content could not be loaded.</p>';
     }
